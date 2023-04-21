@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="renderer" content="webkit" />
+  <meta name="build" content="<%= buildTime%>" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <title>
+    <%= title %>
+  </title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  <style>
+    .square {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+    }
+
+    circle {
+      border-radius: 100%;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .pink {
+      background-color: pink;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="height: 800px; background-color: #ccc; padding: 50px;">
+    <h1 style="margin: 0; padding: 50px 0;">basic api</h1>
+
+    <div id="to" class="square red">to</div>
+    <br />
+    <div id="from" class="square red">from</div>
+    <br />
+    <div id="fromTo" class="square green">from to</div>
+    <br />
+    <div id="keyframes" class="square blue">keyframes</div>
+
+    <br />
+    <div id="hook" class="square pink">hook</div>
+
+    <br />
+    <div id="tl_1" class="square green">tl_1</div>
+    <div id="tl_2" class="square green">tl_2</div>
+    <div id="tl_3" class="square green">tl_3</div>
+  </div>
+
+  <div id="page1" style="height: 800px; background-color: bisque; padding: 50px;">
+    <h1>timeline + scrollTrigger page1</h1>
+
+    <div class="relative_box" style="width: 800px; height: 500px; border: 1px solid #ccc;">
+      <img class="img1" style="width: 100px" src="./img/1.webp">
+      <img class="img2" style="width: 100px" src="./img/2.jpeg">
+    </div>
+  </div>
+
+  <div id="page2" style="height: 100vh; background-color: cadetblue; padding: 50px;">
+    <h1>timeline + scrollTrigger page2</h1>
+
+    <div class="target2" style="position: relative; height: 800px; background-color: #ccc; padding: 50px;">
+      <img class="img3" style="position: absolute; left: 0; width: 300px" src="./img/3.jpeg">
+      <img class="img4" style="position: absolute; left: 0; width: 250px" src="./img/4.webp">
+      <img class="img5" style="position: absolute; left: 0; width: 300px" src="./img/5.webp">
+    </div>
+  </div>
+
+  <div id="page3" style="height: 800px; background-color: beige; padding: 50px;">
+    <h1>timeline + scrollTrigger page3</h1>
+    <h2>占位</h2>
+  </div>
+
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
